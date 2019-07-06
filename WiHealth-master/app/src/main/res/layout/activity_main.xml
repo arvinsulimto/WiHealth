@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:layout_height="match_parent">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:background="@color/colorAccent"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:logo="@drawable/ic_menu_black_24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WiHealth"
+                        android:layout_gravity="center"
+                        android:id="@+id/toolbar_title"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="sans-serif-medium" />
+                </android.support.v7.widget.Toolbar>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_marginTop="75dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="320dp"
+                    android:src="@drawable/qrcode" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:imeOptions="actionSearch"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="70dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="Search" />
+
+            <Button
+                android:id="@+id/btnPt"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="127dp"
+                android:background="@color/backgroundColor"
+                android:text="Choose a Personal Trainer"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"/>
+
+                <ViewFlipper
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/v_flipper" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:text="Categories"
+                    android:layout_marginTop="400dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginLeft="10dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:id="@+id/basket"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="435dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/basket"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Basketball"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="435dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="130dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/basket"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Basketball"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/badminton"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="435dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="130dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/badminton"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Badminton"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gym"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="435dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="250dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/gym"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Gym"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/football"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="530dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/football"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Football"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/tennis"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="530dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="130dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/tenis"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Tenis"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="530dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="250dp"
+                    android:id="@+id/swimming">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/swimming"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:text="Swimming"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="false"
+                    android:isScrollContainer="false"
+                    android:layout_below="@id/swimming"
+                    android:id="@+id/rv_search_nearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

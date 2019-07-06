@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "712174588899",
+    "firebase_url": "https://wihealth-a891a.firebaseio.com",
+    "project_id": "wihealth-a891a",
+    "storage_bucket": "wihealth-a891a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712174588899:android:8eb29de1ea095e22",
+        "android_client_info": {
+          "package_name": "com.example.wihealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712174588899-3lmch8kat9lrahvfd3iujooqt8c1r93i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wihealth",
+            "certificate_hash": "70c14d685719c8328b044892f708fadbeb13eded"
+          }
+        },
+        {
+          "client_id": "712174588899-tjlm4q9ttmtg503507j9hhcjhipdc8ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EfGyVqwI-jiUK9CC8FiQod35kf0hkM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712174588899-tjlm4q9ttmtg503507j9hhcjhipdc8ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712174588899:android:43dda1b8f21f779d",
+        "android_client_info": {
+          "package_name": "com.niki.wihealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712174588899-3ik4onldjj7n10skmmj3kbqsiq3vc6ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.niki.wihealth",
+            "certificate_hash": "c1e26f345dd8a9c53154aa367cec98914a12f41f"
+          }
+        },
+        {
+          "client_id": "712174588899-tjlm4q9ttmtg503507j9hhcjhipdc8ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EfGyVqwI-jiUK9CC8FiQod35kf0hkM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712174588899-tjlm4q9ttmtg503507j9hhcjhipdc8ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

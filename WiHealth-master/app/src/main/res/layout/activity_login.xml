@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_background"
+    tools:context=".Login">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <requestFocus/>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_marginTop="30dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                app:cornerRadius="40dp"
+                app:shadowMargin="6dp"
+                app:shadowRadius="0dp"
+                app:backgroundColor="@android:color/white"
+                app:shadowColor="@color/backgroundColor">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"
+                    app:layout_gravity="center"
+                    android:contentDescription="@string/logoDis" />
+
+            </com.loopeer.shadow.ShadowView>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:shadowMargin="5dp"
+                android:elevation="5dp"
+                app:cornerRadius="2dp"
+                app:shadowColor="@color/backgroundColor2"
+                app:backgroundColor="@android:color/white"
+                app:shadowRadius="3dp">
+
+            <TextView
+                android:id="@+id/sign_in_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            </com.loopeer.shadow.ShadowView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forgot password?"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Are you new?"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:padding="3dp"
+            android:onClick="openSignupPage"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/background_blur_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/login_loader"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:indicatorColor="@android:color/white"/>
+
+</RelativeLayout>

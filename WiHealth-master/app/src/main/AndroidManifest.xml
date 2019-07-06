@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niki.wihealth">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity"/>
+        <activity android:name=".Reward"></activity>
+        <activity android:name=".DetailPersonalTrainer" />
+        <activity android:name=".PersonalTrainer" />
+        <activity android:name=".Rating" />
+        <activity android:name=".CategoryList" />
+        <activity android:name=".DetailPage" />
+        <activity android:name=".SearchSportCenter" />
+        <activity android:name=".QrCodeScanner" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Profile" />
+    </application>
+
+</manifest>
